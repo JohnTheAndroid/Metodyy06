@@ -16,5 +16,25 @@ namespace Metodyy06
         {
             InitializeComponent();
         }
+        private int CifLichSoucet(int cislo)
+        {
+            int soucet_lich = 0;
+            while (cislo > 0)
+            {
+                int cifra = cislo % 10;
+                if (cifra % 2 != 0)
+                {
+                    soucet_lich += cifra;
+                }
+
+                cislo /= 10;
+            }
+            return soucet_lich;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
