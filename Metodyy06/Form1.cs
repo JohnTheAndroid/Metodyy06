@@ -31,6 +31,24 @@ namespace Metodyy06
             }
             return soucet_lich;
         }
+        private bool JePrvocislo(int cislo)
+        {
+            bool Prvocislo = true;
+            if (cislo == 1)
+            {
+                Prvocislo = false;
+            }
+            int delitel = 2;
+            while (delitel < cislo)
+            {
+                if (cislo % delitel == 0)
+                {
+                    Prvocislo = false;
+                }
+                ++delitel;
+            }
+            return Prvocislo;
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
