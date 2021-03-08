@@ -34,7 +34,9 @@ namespace Metodyy06
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            int n = int.Parse(textBox1.Text);
+            int vysledek = CifLichSoucet(n);
+            MessageBox.Show("Soucet lichych cifer je " + vysledek);
         }
     }
 }
