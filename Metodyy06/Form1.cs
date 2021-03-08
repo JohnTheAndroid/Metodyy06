@@ -55,6 +55,16 @@ namespace Metodyy06
             int n = int.Parse(textBox1.Text);
             int vysledek = CifLichSoucet(n);
             MessageBox.Show("Soucet lichych cifer je " + vysledek);
+
+            bool jeprvocislo = JePrvocislo(n);
+            if (jeprvocislo)
+            {
+                MessageBox.Show("Je Prvocislo");
+            }
+            else
+            {
+                MessageBox.Show("neni prvocislo");
+            }
         }
     }
 }
